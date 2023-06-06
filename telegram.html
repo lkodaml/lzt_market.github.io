@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nullstyle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="page-marcet__header" style="background-image: url('images/header-bg.jpg');">
+    <div class="page-marcet__header-inner">
+        <div class="page-marcet__header-column">
+            <a class="page-marcet__header-logo-container" href="">
+                <picture><source srcset="../images/logoza-logo.svg" type="image/webp"><img class="page-marcet__header-logo-img" src="../images/logoza-logo.svg" alt="Логотип"></picture>
+                <picture><source srcset="../images/logo-text.webp" type="image/webp"><img class="page-marcet__header-logo-img-text"src="../images/logo-text.png" alt=""></picture>
+            </a>
+        </div>
+        <div class="page-marcet__header-column page-marcet__header-column-menu">
+            <div class="page-marcet__header-top">
+                <nav class="page-marcet__menu">
+                    <ul class="page-marcet__menu-list">
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Каталог товаров</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Report</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Загрузка аккаунтов</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Контакты</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Правила</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Контакты</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link" href="#">Правила</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link --notification" href="#">Уведомления</a></li>
+                        <li class="page-marcet__menu-item"><a class="page-marcet__menu-link --help" href="#">Помощь</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="page-marcet__header-bottom">
+                <div class="page-marcet__header-search">
+                    <span class="search-icon"></span>
+                    <input type="text" placeholder="Поиск..." class="page-marcet__header-search-area">
+                </div>
+                <div class="page-marcet__header-wallet">
+                    <span class="page-marcet__header-wallet-value">0,00</span>
+                    <span class="page-marcet__header-wallet-value">руб</span>
+                </div>
+                <div class="page-marcet__header-user-account">
+                    <a href="#" class="page-marcet__header-user-account-link"></a>
+                </div>
+                <div class="page-marcet__header-basket">
+                    <button class="page-marcet__header-basket-btn"></button>
+                </div>
+                <a href="#" class="page-marcet__header-last-orders"></a>
+            </div>
+        </div>
+    </div>
+</header>
+       <main class="main">
+
+
+    
+    <div class="section-goods">
+    <div class="container-section">
+        <div class="goods-wrapper tg-goods-wrapper">
+            <form class="goods-form goods-tg-form">
+                <div class="goods-form__container">
+                    <div class="goods-form__column">
+                        <div class="goods-form__inner">
+                            <div class="goods-form__price price-tg --margin">
+                                <div class="area-inner price-tg-container">
+                                    <span></span>
+                                    <input type="number" placeholder="Цена от" class="goods-form__input-price all-input">
+                                    <p class="price-acc" id="rub">₽</p>
+                                </div>
+                                
+                                <div class="area-inner price-tg-container">
+                                    <span></span>
+                                    <input type="number" placeholder="До" class="goods-form__input-price all-input">
+                                    <p class="price-acc" id="rub">₽</p>
+                                </div>
+                            </div>
+                            <div class="goods-form__phishing phishing-acc-tg all-select-container area-inner --margin">
+                                <button class="goods-form__select all-select all-select__phishing all-input">
+                                    <span></span>
+                                    <p class="goods-form__select-span select-span-text">Фишинг</p>
+                                </button>
+                            </div>
+                            <div class="goods-form__acc-origin acc-origin-tg area-inner --margin">
+                                <span></span>
+                                <input type="text" placeholder="Исключить происхождение аккаунта" class="all-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-form__column">
+                        <div class="goods-form__inner">
+                            <div class="goods-form__id-search area-inner --margin">
+                                <span></span>
+                                <input type="text" placeholder="Поиск по ID продавца" class="goods-form__id-search-input all-input">
+                            </div>
+                            <div class="goods-form__country area-inner all-select-container --margin">
+                                <button class="goods-form__select all-select all-select__country all-input">
+                                    <span></span>
+                                    <p class="goods-form__select-span select-span-text">Россия</p>
+                                </button>
+                            </div>
+                            <div class="goods-form__resting-search area-inner --margin">
+                                <span></span>
+                                <input type="text" placeholder="Отлежка от, дней" class="goods-form__resting-search-input all-input">
+                            </div>
+                            <div class="radio-box --margin">
+                                <h5 class="radio-box__title">Telegram Premium</h5>
+                                <ul class="goods-form__list-premium radio-box-list">
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input class="input-hidden" type="radio" id="premium-1" name="premium">
+                                        <label for="premium-1" class="goods-form__list-item-label all-input">Не важно</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="premium-2" name="premium">
+                                        <label for="premium-2" class="goods-form__list-item-label all-input">Нет</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="premium-3" name="premium">
+                                        <label for="premium-3" class="goods-form__list-item-label all-input">Да</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-form__column">
+                        <div class="goods-form__inner">
+                            <div class="goods-form__button-submit --margin">
+                                <button class="goods-form__button-submit-btn">
+                                    Показать ~ <span class="goods-form__button-submit-span">8911</span> аккаунтов
+                                </button>
+                            </div>
+                            <div class="radio-box --margin">
+                                <h5 class="radio-box__title">Пароль на аккаунте</h5>
+                                <ul class="goods-form__list-pass radio-box-list">
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input class="input-hidden"  type="radio" id="tgPass-1" name="tgPass">
+                                        <label for="tgPass-1" class="goods-form__list-item-label radio all-input">Не важно</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="tgPass-2" name="tgPass">
+                                        <label for="tgPass-2" class="goods-form__list-item-label all-input">Нет</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="tgPass-3" name="tgPass">
+                                        <label for="tgPass-3" class="goods-form__list-item-label all-input">Да</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="radio-box --margin">
+                                <h5 class="radio-box__title">Спамблок</h5>
+                                <ul class="goods-form__list-spamblock radio-box-list">
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input class="input-hidden" type="radio" id="tgSpam-1" name="tgSpam">
+                                        <label for="tgSpam-1" class="goods-form__list-item-label all-input">Не важно</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="tgSpam-2" name="tgSpam">
+                                        <label for="tgSpam-2" class="goods-form__list-item-label all-input">Нет</label>
+                                    </li>
+                                    <li class="goods-form__list-item area-inner --margin-l">
+                                        <span></span>
+                                        <input type="radio" class="input-hidden" id="tgSpam-3" name="tgSpam">
+                                        <label for="tgSpam-3" class="goods-form__list-item-label all-input">Да</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="goods-label tg-goods-label">
+                <picture><source srcset="../images/telegram-icon.webp" type="image/webp"><img class="goods-label-img tg-goods-label-img" src="../images/telegram-icon.png" alt=""></picture>
+                Telegram
+            </div>
+            <ul class="goods-list tg-goods-list">
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+                <li class="goods-list-item tg-goods-item">
+                    <div class="goods-list-item-icon tg-goods-item-icon">
+                        <picture><source srcset="../images/tg-icon.webp" type="image/webp"><img src="../images/tg-icon.png" alt="" class="goods-list-item-icon-img tg-goods-item-icon-img"></picture>
+                    </div>
+                    <button class="goods-list-item__btn tg-goods-list-item__btn">Купить</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+       </main>
+    
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
